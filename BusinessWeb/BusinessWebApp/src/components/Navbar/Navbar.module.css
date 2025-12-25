@@ -51,12 +51,14 @@
   .links {
     gap: 16px;
     font-size: 14px;
+
+ 
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; 
   }
-}
 
-
-@media (max-width: 480px) {
-  .links {
+  .links::-webkit-scrollbar {
     display: none; 
   }
 }
