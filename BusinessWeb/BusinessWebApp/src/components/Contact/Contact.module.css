@@ -15,8 +15,37 @@
   opacity: 0.9;
 }
 
+/* CONTACT DETAILS */
+.details {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.value {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* CTA BUTTON */
 .cta {
-  margin-top: 32px;
+  margin-top: 48px;
   padding: 14px 36px;
   background: var(--white);
   color: var(--primary);
@@ -24,4 +53,29 @@
   border: none;
   font-weight: 600;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact {
+    padding: 100px 24px;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .details {
+    gap: 28px;
+  }
+
+  .value {
+    font-size: 16px;
+  }
 }

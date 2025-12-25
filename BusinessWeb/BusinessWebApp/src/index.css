@@ -1,4 +1,4 @@
-/* RESET */
+
 *,
 *::before,
 *::after {
@@ -7,20 +7,27 @@
   box-sizing: border-box;
 }
 
-/* THEME */
+
 :root {
-  --white: #ffffff;
-  --primary: #4f46e5;
-  --dark: #0f172a;
-  --text: #1e293b;
-  --muted: #64748b;
-  --bg-light: #f8fafc;
+
+  --white: #0b1220;       
+  --bg-light: #0f172a;    
+  --dark: #020617;         
+
+  
+  --primary: #6366f1;      
+
+
+  --text: #e5e7eb;      
+  --muted: #9ca3af;        
 }
+
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 80px;
 }
+
 
 body {
   font-family: "Inter", system-ui, sans-serif;

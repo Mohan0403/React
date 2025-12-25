@@ -8,12 +8,11 @@
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid #e5e7eb;
+  background: rgba(11, 18, 32, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 1000;
 }
-
 
 .logo {
   font-size: 20px;
@@ -21,7 +20,6 @@
   color: var(--primary);
   text-decoration: none;
 }
-
 
 .links {
   display: flex;
@@ -38,6 +36,8 @@
 .links a:hover {
   color: var(--primary);
 }
+
+/* Mobile Menu Button */
 .menuBtn {
   display: none;
   flex-direction: column;
@@ -48,22 +48,23 @@
 .menuBtn span {
   width: 24px;
   height: 2px;
-  background: #111;
+  background: var(--text);
   transition: 0.3s;
 }
-
 
 .menuBtn.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .menuBtn.active span:nth-child(2) {
   opacity: 0;
 }
+
 .menuBtn.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav {
     padding: 0 16px;
@@ -79,7 +80,7 @@
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: white;
+    background: #020617;
     gap: 20px;
     padding: 24px 0;
     align-items: center;
